@@ -2,7 +2,7 @@
 'use client'
 import React from 'react'
 
-import {ClientSideSuspense} from "@liveblocks/react/";
+import {ClientSideSuspense} from "@liveblocks/react";
 import {useOthers, useSelf} from '@liveblocks/react/suspense'
 
 import {Separator} from "@/components/ui/separator";
