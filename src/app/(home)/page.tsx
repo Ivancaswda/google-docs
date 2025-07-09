@@ -10,7 +10,7 @@ import {useSearchParam} from "@/hooks/useSearchParam";
 
 const HomePage = () => {
 
-    const [search] = useSearchParam()
+    const [search]= useSearchParam()
 
     const {results, status, loadMore} = usePaginatedQuery(api.documents.getDocuments, {search}, {initialNumItems: 5}) ?? []
 
