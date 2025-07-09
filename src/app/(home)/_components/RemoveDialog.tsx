@@ -13,7 +13,8 @@ import {Id} from "../../../../convex/_generated/dataModel";
 import {useMutation} from "convex/react";
 import {api} from "../../../../convex/_generated/api";
 import {toast} from "sonner";
-import {router} from "next/client";
+import {useRouter} from "next/navigation";
+
 
 
 
@@ -28,7 +29,7 @@ const RemoveDialog = ({documentId, children}: RemoveDialogProps) => {
     const removeDocument = useMutation(api.documents.removeById)
 
     const [isRemoving, setIsRemoving] = useState(false)
-
+    const router =useRouter()
 
     return (
         <AlertDialog>
